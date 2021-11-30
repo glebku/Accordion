@@ -1,0 +1,38 @@
+body {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 300px;
+}
+
+.accordion-wrapper {
+    min-width: 500px;
+}
+
+.accordion-elem {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+.accordion-elem-title {
+    padding: 10px;
+    background-color: rgb(14, 216, 216);
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-elem-content {
+    position: relative;
+    background-color: salmon;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.accordion-elem.active .accordion-elem-content{
+    height: 100%;
+}
